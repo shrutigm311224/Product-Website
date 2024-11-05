@@ -1,0 +1,551 @@
+/* General Styling */
+body {
+    font-family: 'Neue Haas Display', sans-serif;
+    margin: 0;
+    padding: 0;
+    opacity: 20;
+    color: #180a76;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: oblique;
+    background-image: url('BioAlpine-Master-Alps-WPC.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-attachment: fixed;
+    margin-left: 10px;
+}
+
+/* Header (Navbar) */
+header {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+/* Logo Container */
+.logo-container img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+/* Navbar Styles */
+.navbar {
+    padding: 0;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-color: #FE5000;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    color: #0d0d0d;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-link:hover {
+    color: #FE5000;
+}
+
+/* Search Container */
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-container input {
+    padding: 5px;
+    width: 500px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.search-button {
+    padding: 5px;
+    width: 50px;
+    background-color: #FE5000;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Hero Section (Full-screen Image) */
+#home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+#home h1 {
+    font-size: 3rem;
+}
+
+#home p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#home a {
+    padding: 10px 20px;
+    background-color: #FE5000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For Small screens (mobile) */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 10px 0;
+    }
+
+    .search-container input {
+        width: 150px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+}
+
+/* For Extra Small screens (portrait mobile) */
+@media (max-width: 480px) {
+    .search-container input {
+        width: 120px;
+    }
+
+    .navbar-toggler-icon {
+        background-color: #FE5000;
+    }
+}
+/* Slogan Section */
+.slogan-box {
+    padding: 100px 20px;
+    text-align: center;
+    height: 400px;
+    margin-top: 40px;
+    background-color: rgba(44, 20, 151, 0); /* Semi-transparent background */
+    color: rgb(235, 100, 16);
+    font-weight: 200;
+    font-weight:bolder;
+    font-style: italic;
+    font-variant: unset;
+}
+
+.slogan-box h2 {
+    font-family: 'Verdana', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+.slogan-box p {
+    font-family: 'Neue Haas Display', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    color: #090239;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.main-search-field {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.main-search-field input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    width: 300px;
+    margin-right: 5px;
+}
+
+.main-search-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(227, 61, 28);
+    color: #fff;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.main-search-btn:hover {
+    background-color: #f26525;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For Small screens (mobile) */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 10px 0;
+    }
+
+    .slogan-box h2 {
+        font-size: 2rem;
+    }
+
+    .slogan-box p {
+        font-size: 1.1rem;
+    }
+
+    .main-search-field input {
+        width: 250px;
+    }
+
+    .main-search-btn {
+        font-size: 1em;
+    }
+}
+
+/* For Extra Small screens (portrait mobile) */
+@media (max-width: 480px) {
+    .slogan-box h2 {
+        font-size: 1.8rem;
+    }
+
+    .slogan-box p {
+        font-size: 1rem;
+    }
+
+    .main-search-field input {
+        width: 200px;
+    }
+
+    .main-search-btn {
+        font-size: 0.9em;
+    }
+/* Products Section */
+.products-box {
+    background-color: rgba(141, 158, 200, 0.5);
+    padding: 40px;
+}
+
+.section-title {
+    font-family: 'NeueHaasDisplayBold', sans-serif;
+    color: #fff;
+    font-size: 36px;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 18px;
+    color: #333;
+}
+
+.card-body button {
+    width: 48%;
+    margin: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 200px;
+    }
+    
+    .card-title {
+        font-size: 16px;
+    }
+
+    .card-body button {
+        width: 100%;
+    }
+}
+
+/* Mobile Layout */
+@media (max-width: 576px) {
+    .card-img-top {
+        height: 180px;
+    }
+
+    .card-title {
+        font-size: 14px;
+    }
+
+    .card-body button {
+        width: 100%;
+        margin-top: 5px;
+    }
+}
+/* About Section Styles */
+.about-box {
+    background-color: rgba(141, 158, 200, 0.5);
+    padding: 40px;
+    margin-top: 40px;
+}
+
+.section-title {
+    font-family: 'NeueHaasDisplayBold', sans-serif;
+    color: #fff;
+    font-size: 36px;
+}
+
+.section-text {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 28px;
+    }
+
+    .section-text {
+        font-size: 16px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 14px;
+    }
+}
+
+/* Mobile Layout */
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 24px;
+    }
+
+    .section-text {
+        font-size: 14px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 12px;
+    }
+}
+/* Contact Section Styles */
+.contact-box {
+    background-color: rgba(141, 158, 200, 0.5);
+    padding: 40px 0;
+    margin-top: 40px;
+}
+
+.section-title {
+    font-family: 'NeueHaasDisplayBold', sans-serif;
+    color: #fff;
+    font-size: 36px;
+}
+
+.contact-box input,
+.contact-box textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.contact-box input::placeholder,
+.contact-box textarea::placeholder {
+    font-size: 12px;
+    color: #999;
+}
+
+.contact-box button {
+    background-color: #FE5000;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.contact-box button:hover {
+    background-color: #190b4c;
+}
+
+/* Responsive Design for Contact Section */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 28px;
+    }
+
+    .contact-box input,
+    .contact-box textarea {
+        font-size: 16px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 14px;
+    }
+}
+
+/* Mobile Layout */
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 24px;
+    }
+
+    .contact-box input,
+    .contact-box textarea {
+        font-size: 14px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 12px;
+    }
+}
+/* Reset and Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Location Section Styles */
+.location {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.location h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.location p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.address {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Map Container */
+.map-container {
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    border-radius: 8px;
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablet View */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .location {
+        padding: 40px 30px;
+    }
+
+    .location h2 {
+        font-size: 1.8rem;
+    }
+
+    .address {
+        font-size: 1.1rem;
+    }
+
+    iframe {
+        height: 350px;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+    .location {
+        padding: 30px 15px;
+    }
+
+    .location h2 {
+        font-size: 1.5rem;
+    }
+
+    .address {
+        font-size: 1rem;
+    }
+
+    iframe {
+        height: 250px;
+    }
+}
